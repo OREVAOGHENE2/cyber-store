@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+main {
+  background: linear-gradient(90.7deg, #211c24 0.64%, #211c24 101%);
+}
+
+.main-work {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically centered */
+  width: 100%; /* Full width */
+  height: 632px; /* Fixed height */
+  padding: 0px 160px; /* Adjust padding */
+}
+
+.second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.images {
+  flex: 0 0 auto;
+}
+
+.second button {
+  padding: 10px 20px;
+  background-color: #211c24;
+  color: white;
+  border: 2px solid white;
+  width: 40%;
+  cursor: pointer;
+}
+
+.second button:hover {
+  background-color: #555;
+}
+.second h5 {
+  color: #8a878b;
+}
+.second h1 {
+  color: rgb(187, 178, 178);
+  font-weight: 300;
+}
+.second p {
+  color: #555;
+}
+.second > promise {
+  text-transform: capitalize;
+  color: white;
+}
+
+section {
+  background-color: #dcdcdc;
+  height: 100vh;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns for the grid */
+  gap: 1em;
+}
+
+#playstation,
+#macbook-air {
+  grid-column: span 1; /* PlayStation and MacBook Air each span 1 column */
+}
+
+#airpods-max,
+#apple-vision-pro {
+  grid-column: span 1; /* AirPods Max and Apple Vision Pro each span 1 column */
+}
+
